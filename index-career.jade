@@ -1,0 +1,28 @@
+- var indexCareers = [{"title": "Node.js", "add": "北京", "time": "14:54", "company": "洋葱教学", "salary": "20k-30k", "expre": "3-5年", "bachlor": "学历不限", "area": "移动互联网", "dis": "教育", "grow": "成长型(B轮)", "info": "丰厚期权、超长年假、年度体检、免费早午餐", "tags": ["产品领先行业", "关注学习资源"]}, {"title": "数据挖掘", "add": "北京", "time": "17:47", "company": "百分点", "salary": "15k-30k", "expre": "3-5年", "bachlor": "本科", "dis": "数据服务", "grow": "成熟型(D轮及以上)", "info": "五险一金 全员持股 没有天花板", "tags": ["节日礼物", "年底双薪", "定期体检"]}, {"title": "Node.js", "add": "北京", "time": "14:54", "company": "洋葱教学", "salary": "20k-30k", "expre": "3-5年", "bachlor": "学历不限", "area": "移动互联网", "dis": "教育", "grow": "成长型(B轮)", "info": "丰厚期权、超长年假、年度体检、免费早午餐", "tags": ["产品领先行业", "关注学习资源"]}, {"title": "数据挖掘", "add": "北京", "time": "17:47", "company": "百分点", "salary": "15k-30k", "expre": "3-5年", "bachlor": "本科", "dis": "数据服务", "grow": "成熟型(D轮及以上)", "info": "五险一金 全员持股 没有天花板", "tags": ["节日礼物", "年底双薪", "定期体检"]}, {"title": "Node.js", "add": "北京", "time": "14:54", "company": "洋葱教学", "salary": "20k-30k", "expre": "3-5年", "bachlor": "学历不限", "area": "移动互联网", "dis": "教育", "grow": "成长型(B轮)", "info": "丰厚期权、超长年假、年度体检、免费早午餐", "tags": ["产品领先行业", "关注学习资源"]}, {"title": "数据挖掘", "add": "北京", "time": "17:47", "company": "百分点", "salary": "15k-30k", "expre": "3-5年", "bachlor": "本科", "dis": "数据服务", "grow": "成熟型(D轮及以上)", "info": "五险一金 全员持股 没有天花板", "tags": ["节日礼物", "年底双薪", "定期体检"]}];
+- var lastCareers = [{"title": "数据挖掘", "add": "北京", "time": "17:47", "company": "百分点", "salary": "15k-30k", "expre": "3-5年", "bachlor": "本科", "dis": "数据服务", "grow": "成熟型(D轮及以上)", "info": "五险一金 全员持股 没有天花板", "tags": ["节日礼物", "年底双薪", "定期体检"]}]
+ul(class="indexCareer-tab")
+	li(class="selector current") 热门职位
+	li(class="selector") 最新职位
+each indexCareer in indexCareers
+	div(class="index-career-box")
+		div(class="career-box-l career-box-t")
+			a(href="#" class="larger-green")=indexCareer.title
+			a(href="#" class="larger-green")="[" + indexCareer.add + "]"
+			span(class="default-grey")=indexCareer.time + "发布"
+		div(class="career-box-r career-box-t")
+			a(href="#" class="larger-green")=indexCareer.company
+		div(class="career-box-l career-box-t")
+			span(class="larger-orange")=indexCareer.salary
+			span="经验" + indexCareer.expre + "/"
+			span=indexCareer.bachlor
+		div(class="career-box-r career-box-t")
+			span=indexCareer.area + "·"
+			span=indexCareer.dis + "/"
+			span=indexCareer.grow
+		div(class="career-box-l career-box-b")
+			span="“" + indexCareer.info + "”"
+		div(class="career-box-r career-box-b")
+			each tag in indexCareer.tags
+				span(class="tag")=tag
+div(class="more") 查看更多
+	i(class="icon-arrow-right")

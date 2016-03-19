@@ -1,0 +1,23 @@
+extends base
+
+block container
+	section(class="index container max-width")
+		aside(class="career-selector")
+			include career-selector
+		section(class="main-page-right")
+			section(class="search")
+				include search
+			section(class="hot")
+				include hot
+			section(class="banner")
+				include banner
+			section(class="ad")
+				include ad
+			section(class="index-career")
+				include index-career
+			section(class="links")
+				include links
+	script(type="text/javascript", src="javascripts/banner.js")
+	script(type="text/javascript", src="javascripts/ad.js")
+	script(type="text/javascript", src="javascripts/career-selector.js")
+	script(type="text/javascript", src="javascripts/index-career.js")

@@ -1,0 +1,23 @@
+
+module mypol 1.0;
+
+require {
+	type sogou_exec_t;
+	type fonts_cache_t;
+	type abrt_dump_oops_t;
+	type sogou_t;
+	type config_home_t;
+	class dir { setattr create };
+	class file getattr;
+}
+
+#============= abrt_dump_oops_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow abrt_dump_oops_t sogou_exec_t:file getattr;
+
+#============= sogou_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow sogou_t config_home_t:dir create;
+allow sogou_t fonts_cache_t:dir setattr;

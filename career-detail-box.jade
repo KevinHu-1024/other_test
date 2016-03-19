@@ -1,0 +1,43 @@
+- var careerDescription = {"title": "Node.js", "add": "北京", "time": "14:54", "company": "洋葱教学", "salary": "20k-30k", "expre": "3-5年", "bachlor": "学历不限", "area": "移动互联网", "dis": "教育", "grow": "成长型(B轮)", "info": "丰厚期权、超长年假、年度体检、免费早午餐", "tags": ["产品领先行业", "关注学习资源"], "dept": "SenseTime移动互联网开发", "descris": [{"title": "岗位职责：", "des": ["基于Android平台进行移动端应用程序独立开发设计、实现、测试及功能维护", "负责产品的系统分析，架构设计；参与模块编码和单元测试； 并编写相关文档", "负责优化客户端软件相关产品适配，升级", "学习和研究新技术以满足产品的需求，根据开发过程中的体验对产品提出改进建议"]}, {"title": "岗位职责：", "des": ["基于Android平台进行移动端应用程序独立开发设计、实现、测试及功能维护", "负责产品的系统分析，架构设计；参与模块编码和单元测试； 并编写相关文档", "负责优化客户端软件相关产品适配，升级", "学习和研究新技术以满足产品的需求，根据开发过程中的体验对产品提出改进建议"]}, {"title": "任职资格：", "des": ["有过大型互联网公司Android相关职位工作经验或者优质创业公司Android产品开发经验的优先", "本科以上学历，计算机相关专业", "熟悉Android平台UI设计，熟悉常用布局", "学习能力强，有创造性思维能力；良好的逻辑思维能力和表达能力，良好的分析和解决问题的能力"]}], "author": "刘静", "authorTitle": "人事经理", "processR": "91", "processT": "2"};
+
+div(class="career-detail-box-simple")
+	div(class="career-detail-box-simple-title")
+		p= careerDescription.dept + "招聘"
+		h1= careerDescription.title
+	div(class="career-detail-box-simple-des")
+		ul
+			li= careerDescription.salary
+			li= careerDescription.add
+			li= careerDescription.expre
+			li= careerDescription.bachlor
+			li= 全职
+		div(class="career-detail-box-simple-youhuo")
+			h2= "职位诱惑 : " + careerDescription.info
+		div(class="career-detail-box-simple-time")
+			p=careerDescription.time + "发布于拉勾网"
+div(class="career-detail-box-detail")
+	dl
+		each descri in careerDescription.descris
+			dt= descri.title
+			dd
+				ol
+					each onedes in descri.des
+						li= onedes
+div(class="career-detail-box-info")
+	p= 职位发布者
+	div
+		h2= careerDescription.author
+		p= careerDescription.authorTitle
+	div
+		h2= careerDescription.processR + "%"
+		p 简历及时处理率
+	div
+		h2= careerDescription.processT + "天"
+		p 简历处理用时
+div(class="career-detail-box-cav")
+	p 你在拉勾还没有简历呢，你可以
+		a 完善在线简历
+		, 也可
+		a 上传附件简历
+		直接投递
+	a 投个简历

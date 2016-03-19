@@ -1,0 +1,10 @@
+- var ads = [{"title": "无讼", "img": "images/wusong.png", "dis": "致力于打造中国最强大的互联网法律服务平台"}, {"title": "和创科技", "img": "images/hongquan.jpg", "dis": "引领企业移动营销管理时代"}, {"title": "图灵", "img": "images/tuling.jpg", "dis": "在这里，读懂人工智能"}, {"title": "华生恒业", "img": "images/huasheng.jpg", "dis": "一家专业开发面向互联网的个人基因组云计算平台"}, {"title": "踏浪者", "img": "images/idebuy.jpg", "dis": "发现您、塑造您、成就您"}, {"title": "大码美衣", "img": "images/damameiyi.png", "dis": "大码美衣，胖美妞儿的买衣神器！"}];
+
+ul(class="ad-container")
+	each ad in ads
+		li(class="ad-box")
+			img(src=ad.img)
+			div(class="ad-mask")
+				h2=ad.title
+				span
+				p=ad.dis

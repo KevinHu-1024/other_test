@@ -1,0 +1,9 @@
+- var bannerImgs = [{"img": "images/banner1.JPG", "ctrl": "images/banner1-forcus.JPG"}, {"img": "images/banner2.JPG", "ctrl": "images/banner2-forcus.JPG"}, {"img": "images/banner3.JPG", "ctrl": "images/banner3-forcus.JPG"}]
+
+div(class="banner-left")
+	each bannerImg in bannerImgs
+		img(class="banner-img", src=bannerImg.img)
+div(class="banner-right")
+	span(class="banner-ctrl-current")
+	each bannerImg in bannerImgs
+		img(class="banner-ctrl",src=bannerImg.ctrl)
