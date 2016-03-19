@@ -1,31 +1,3 @@
-# 胡可第四周作业
-
-***
-
-##### 备忘录
-
-* 安装依赖（less, anywhere, jade）
-
-这几个比较常用，所以装到了全局
-
-    npm install -g less
-    npm install -g anywhere
-    npm install -g jade
-
-*补充*
-
-命令行中使用JADE进行编译(不压缩/开启监视)
-
-	jade -P -w index.jade
-
-浏览器中使用LESS进行预处理
-
-	<link rel="stylesheet/less" type="text/css" href="styles.less" />
-	<script src="javascripts/less.js"></script>
-	
-使用anywhere启动本地服务器，解决开发环境下跨域访问问题
-
-	anywhere 8860	
 
 ## 简易拉勾网项目设计说明
 
@@ -33,45 +5,11 @@
 
 ***
 
-* *Level 1* - 【进行中】使用模板引擎和CSS预编译语言，完成html设计
+使用模板引擎和CSS预编译语言，完成html设计
 
-* *Level 2* - 使用基于Node.js的简易服务器，动态生成网页
 
-* *Level 2* - 所有数据均为动态绑定，从数据库里出来
 
-* *Level 3* - 实现一套CMS
-
-* *Level 4* - 实现响应式和移动端（拉勾网为了节约流量并没有实现响应式，而是单独做了一套手机端网页）
-
-### 2.技术选型
-
-***
-
-#### 前端：
-
-* Jade（通过其与后端配合实现页面组件的模块化）
-* Less（实现CSS样式的整合与分离）
-* jQuery（方便基础操作）
-
-#### 服务器
-
-* Express
-
-#### 数据库
-
-* MongoDB
-
-#### 移动端
-
-* Ionic
-
-#### 工具及环境
-
-* Linux(发行版Fedora)
-* Sublime Text 3
-* AlloyDesigner
-
-### 3.页面分析
+### 2.页面分析
 
 ***
 
