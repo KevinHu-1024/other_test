@@ -1,6 +1,8 @@
 
 ## 简易拉勾网项目设计说明
 
+[地址](http://kevinhu-1024.github.io/other_test/)
+
 ### 1.核心功能
 
 ***
